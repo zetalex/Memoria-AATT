@@ -10,5 +10,5 @@ de Ingeniería de Tecnologías y Servicios de Telecomunicación (*GTSIT*) de la 
 * Integración de esta aplicación con Git, de forma que los commits se pueden hacer directamente desde Overleaf
  
 ## Descarga de la memoria
-Las versiones del documento que se consideren aptas para entrega se pondrán en la ventana de  [![Releases](https://img.shields.io/github/downloads/zetalex/Memoria-AATT/total)](https://github.com/zetalex/Memoria-AATT/releases)
+Las versiones del documento que se consideren aptas para entrega se pondrán [![Releases](https://img.shields.io/github/downloads/zetalex/Memoria-AATT/total)](https://github.com/zetalex/Memoria-AATT/releases)
 
