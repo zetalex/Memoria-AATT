@@ -1,0 +1,8 @@
+\renewcommand{\baselinestretch}{0.5}
+\chapter{Conclusiones}\label{ch:ch4label}
+En este apartado, se exponen las justificaciones de los resultados y las conclusiones a las que se han llegado:
+\begin{itemize}
+    \item \textbf{Lógica CMOS Dinámica:} Se ha comprendido el funcionamiento de la lógica CMOS dinámica así como las ventajas e inconvenientes que esta presenta. Además se ha estudiado el comportamiento eléctrico de un generador de paridad realizado en esta lógica mediante la realización de un esquemático y su posterior simulación. Esto nos ha permitido conocer la función lógica que implementa y diferenciar entre las etapas de precarga y evaluación.
+    \item \textbf{Análisis paramétricos:} Yendo más allá en el campo de la simulación, se han corrido sendos análisis paramétricos en frecuencia y en función del ancho de puerta y se han comentado algunos aspectos con respecto al nivel de degradación de la señal y lo que pasaría si el reloj se hace asimétrico llegando, en el caso de la frecuencia a algunos puntos en los que se incumple el $t_{Emin}$ y $t_{Pmax}$.
+    \item \textbf{Encadenamiento de etapas dinámicas:} Se ha aprendido la forma correcta de interconectar etapas dinámicas, haciendo hincapié en que es necesaria la lógica dominó para interconectarlas (no vale con interconexión directa) y que se debe hacer de una forma concreta, conectando siempre la salida de la anterior etapa al último bit de la entrada. Si se hace caso omiso de esta regla, el circuito deja de sacar a la salida el resultado esperado tal y como se ha visto en la figura \ref{fig:GraphBadEnc}
+\end{itemize}
