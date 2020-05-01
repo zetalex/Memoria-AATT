@@ -6,9 +6,9 @@ de Ingeniería de Tecnologías y Servicios de Telecomunicación (*GTSIT*) de la 
 ![Alt text](relative/path/to/img.jpg?raw=true "Title")
 
 ## Características
- -Memoria escrita en LaTeX utilizando la herramienta [Overleaf](https://es.overleaf.com/)
- -Uso de los foros [StackExchange](https://tex.stackexchange.com/) para encontrar información acerca del uso de LaTeX
- -Integración de esta aplicación con Git, de forma que los commits se pueden hacer directamente desde Overleaf
+-Memoria escrita en LaTeX utilizando la herramienta [Overleaf](https://es.overleaf.com/)
+-Uso de los foros [StackExchange](https://tex.stackexchange.com/) para encontrar información acerca del uso de LaTeX
+-Integración de esta aplicación con Git, de forma que los commits se pueden hacer directamente desde Overleaf
  
 ## Descarga de la memoria
 Las versiones del documento que se consideren aptas para entrega se pondrán en la ventana de  [![Releases](https://img.shields.io/github/downloads/zetalex/Memoria-AATT/total)](https://github.com/zetalex/Memoria-AATT/releases)
