@@ -177,43 +177,45 @@
 	pdfstartview=FitH%
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Verilog Language
+% Java Language
 %https://tex.stackexchange.com/questions/377122/typesetting-for-a-verilog-lstinput%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{xcolor}
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+\usepackage{inconsolata}
 \usepackage{listings}
-\definecolor{vgreen}{RGB}{104,180,104}
-\definecolor{vblue}{RGB}{49,49,255}
-\definecolor{vorange}{RGB}{255,143,102}
-
-\lstdefinestyle{verilog-style}
-{
-    language=Verilog,
-    basicstyle=\small\ttfamily,
-    keywordstyle=\color{vblue},
-    identifierstyle=\color{black},
-    commentstyle=\color{vgreen},
-    numbers=left,
-    numberstyle=\tiny\color{black},
-    numbersep=10pt,
-    tabsize=8,
-    moredelim=*[s][\colorIndex]{[}{]},
-    literate=*{:}{:}1
+\usepackage{tcolorbox}
+\lstset{language=Java,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  stringstyle=\color{pred},
+  basicstyle=\ttfamily,
+  morecomment=[s][\color{gray}]{@}{\ }
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+\tcbuselibrary{listings,skins}
+\lstdefinestyle{mystyle}{
+numbers=left, 
+numberstyle=\small, 
+numbersep=8pt, 
+language=Java
 }
 
-\makeatletter
-\newcommand*\@lbracket{[}
-\newcommand*\@rbracket{]}
-\newcommand*\@colon{:}
-\newcommand*\colorIndex{%
-    \edef\@temp{\the\lst@token}%
-    \ifx\@temp\@lbracket \color{black}%
-    \else\ifx\@temp\@rbracket \color{black}%
-    \else\ifx\@temp\@colon \color{black}%
-    \else \color{vorange}%
-    \fi\fi\fi
-}
-\makeatother
-
+\newtcblisting{mylisting}[2][]{
+    arc=0pt, outer arc=0pt,
+    listing only,
+    listing style=mystyle,
+    title=#2,
+    #1
+    }
+    
 \usepackage{trace}
 \usepackage{dirtytalk}
